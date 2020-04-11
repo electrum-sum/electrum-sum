@@ -16,22 +16,28 @@ Getting started
 ===============
 
 Electrum-SUM is a pure python application. If you want to use the
-Qt interface, install the Qt dependencies::
+Qt interface, install the Qt dependencies:
+
 ```
 sudo apt-get install python3-pyqt5
 ```
+
 If you downloaded the official package (tar.gz), you can run
 Electrum-SUM from its root directory without installing it on your
 system; all the python dependencies are included in the 'packages'
-directory. To run Electrum-SUM from its root directory, just do::
+directory. To run Electrum-SUM from its root directory, just do:
+
 ```
 ./run_electrum
 ```
-You can also install Electrum-SUM on your system, by running this command::
+
+You can also install Electrum-SUM on your system, by running this command:
+
 ```
 sudo apt-get install python3-setuptools
 python3 -m pip install .[fast]
 ```
+
 This will download and install the Python dependencies used by
 Electrum-SUM instead of using the 'packages' directory.
 The 'fast' extra contains some optional dependencies that we think
@@ -45,22 +51,28 @@ Version".
 Development version
 ===================
 
-Check out the code from GitHub::
+Check out the code from GitHub:
+
 ```
 git clone git://github.com/sumcoinlabs/electrum-sum-1.git
 cd electrum-sum
 ```
+
 Run install (this should install dependencies)::
+
 ```
 python3 -m pip install .[fast]
 ```
 
-Compile the protobuf description file::
+Compile the protobuf description file:
+
 ```
 sudo apt-get install protobuf-compiler
 protoc --proto_path=electrum_sum --python_out=electrum_sum electrum_sum/paymentrequest.proto
 ```
-Create translations (optional)::
+
+Create translations (optional):
+
 ```
 sudo apt-get install python-requests gettext
 ./contrib/pull_locale
