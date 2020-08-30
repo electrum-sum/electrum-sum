@@ -28,6 +28,7 @@ import json
 
 from .util import inv_dict
 
+CHUNK_LEN = 2016
 
 def read_json(filename, default):
     path = os.path.join(os.path.dirname(__file__), filename)
@@ -47,7 +48,7 @@ class AbstractNet:
 
     @classmethod
     def max_checkpoint(cls) -> int:
-        return max(0, len(cls.CHECKPOINTS) * 2016 - 1) # Sumcoin deedle difficulty measure
+        return max(0, len(cls.CHECKPOINTS) * CHUNK_LEN - 1) # Sumcoin deedle difficulty measure
 
 
 class BitcoinMainnet(AbstractNet):

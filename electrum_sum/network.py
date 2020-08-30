@@ -47,6 +47,7 @@ from .util import (log_exceptions, ignore_exceptions,
                    is_hash256_str, is_non_negative_integer)
 
 from .bitcoin import COIN
+from .constants import CHUNK_LEN
 from . import constants
 from . import blockchain
 from . import bitcoin
@@ -799,7 +800,7 @@ class Network(Logger):
     async def _init_headers_file(self):
         b = blockchain.get_best_chain()
         filename = b.path()
-        length = HEADER_SIZE * len(constants.net.CHECKPOINTS) * 2016
+        length = HEADER_SIZE * len(constants.net.CHECKPOINTS) * CHUNK_LEN
         if not os.path.exists(filename) or os.path.getsize(filename) < length:
             with open(filename, 'wb') as f:
                 if length > 0:
