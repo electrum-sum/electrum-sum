@@ -533,6 +533,7 @@ class Interface(Logger):
                 last = 'catchup'
             else:
                 last, height = await self.step(height)
+            self.logger.info(f"height: {prev_last} {prev_height}")
             assert (prev_last, prev_height) != (last, height), 'had to prevent infinite loop in interface.sync_until'
         return last, height
 

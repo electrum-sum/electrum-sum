@@ -64,7 +64,7 @@ def check_imports():
         import jsonrpclib
         import aiorpcx
     except ImportError as e:
-        sys.exit(f"Error: {str(e)}. Try 'sudo python3 -m pip install <module-name>'")
+        sys.exit("Error")
     # the following imports are for pyinstaller
     from google.protobuf import descriptor
     from google.protobuf import message
@@ -191,12 +191,12 @@ def get_connected_hw_devices(plugins):
         name, plugin = splugin.name, splugin.plugin
         if not plugin:
             e = splugin.exception
-            _logger.error(f"{name}: error during plugin init: {repr(e)}")
+            _logger.error("error during plugin init")
             continue
         try:
             u = devmgr.unpaired_device_infos(None, plugin)
         except Exception as e:
-            _logger.error(f'error getting device infos for {name}: {repr(e)}')
+            _logger.error('error getting device infos for')
             continue
         devices += list(map(lambda x: (name, x), u))
     return devices

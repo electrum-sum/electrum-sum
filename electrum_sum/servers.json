@@ -1,38 +1,8 @@
 {
-    "e1-sum.electrum-bynd.com": {
+    "164.90.154.102": {
         "pruning": "-",
-        "s": "53333",
-        "t": "53332",
-        "version": "1.4"
-    },
-    "e2-sum.electrum-bynd.com": {
-        "pruning": "-",
-        "s": "53333",
-        "t": "53332",
-        "version": "1.4"
-    },
-    "sum.electrum-bynd.com": {
-        "pruning": "-",
-        "s": "53333",
-        "t": "53332",
-        "version": "1.4"
-    },
-    "sum1.electrum-bynd.com": {
-        "pruning": "-",
-        "s": "53333",
-        "t": "53332",
-        "version": "1.4"
-    },
-    "209.97.130.23": {
-        "pruning": "-",
-        "s": "53333",
-        "t": "53332",
-        "version": "1.4"
-    },
-    "139.59.79.68": {
-        "pruning": "-",
-        "s": "53333",
-        "t": "53332",
+        "s": "50002",
+        "t": "50001",
         "version": "1.4"
     }
 }
