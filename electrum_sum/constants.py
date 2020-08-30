@@ -47,7 +47,7 @@ class AbstractNet:
 
     @classmethod
     def max_checkpoint(cls) -> int:
-        return max(0, len(cls.CHECKPOINTS) * 2880 - 1) # Sumcoin deedle difficulty measure
+        return max(0, len(cls.CHECKPOINTS) * 2016 - 1) # Sumcoin deedle difficulty measure
 
 
 class BitcoinMainnet(AbstractNet):

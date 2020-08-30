@@ -634,7 +634,7 @@ def time_difference(distance_in_time, include_seconds):
         return "about 1 hour"
     elif distance_in_minutes < 1440:
         return "about %d hours" % (round(distance_in_minutes / 60.0))
-    elif distance_in_minutes < 2880:
+    elif distance_in_minutes < 2016:
         return "1 day"
     elif distance_in_minutes < 43220:
         return "%d days" % (round(distance_in_minutes / 1440))
