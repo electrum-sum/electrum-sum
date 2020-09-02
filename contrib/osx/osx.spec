@@ -98,7 +98,7 @@ binaries += [b for b in collect_dynamic_libs('PyQt5') if 'macstyle' in b[0]]
 # We don't put these files in to actually include them in the script but to make the Analysis method scan them for imports
 a = Analysis([electrum+ MAIN_SCRIPT,
               electrum+'electrum_sum/gui/qt/main_window.py',
-              electrum+'version/gui/text.py',
+              electrum+'electrum_sum/gui/text.py',
               electrum+'electrum_sum/util.py',
               electrum+'electrum_sum/wallet.py',
               electrum+'electrum_sum/simple_config.py',
