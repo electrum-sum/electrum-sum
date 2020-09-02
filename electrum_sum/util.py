@@ -648,9 +648,11 @@ def time_difference(distance_in_time, include_seconds):
         return "over %d years" % (round(distance_in_minutes / 525600))
 
 mainnet_block_explorers = {
-    'https://sumexplorer.com/': ('https://sumexplorer.com/',
+    'SumCore': ('https://insight.sumcore.org/',
                         {'tx': 'tx/', 'addr': 'address/'}),
-    'system default': ('https://sumexplorer.com/',
+    'SumExplorer': ('https://sumexplorer.com/',
+                        {'tx': 'tx/', 'addr': 'address/'}),
+    'system default': ('blockchain://37d4696c5072cd012f3b7c651e5ce56a1383577e4edacc2d289ec9b25eebfd5e/',
                         {'tx': 'tx/', 'addr': 'address/'}),
 }
 
