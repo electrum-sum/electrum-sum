@@ -144,10 +144,18 @@ class ExchangeBase(Logger):
 
 class SumcoinIndex(ExchangeBase):
 
+    def get_rate_index(self, json, name):
+        item = next((item for item in json if item['code'] == name), None)
+        return item  # for not found employee
+
     async def get_rates(self, ccy):
         json = await self.get_json('rates.sumcoinindex.com', '/api/rates')
-        return dict([(ccy.upper(), Decimal(d))
-                     for ccy, d in json['market_data']['current_price'].items()])
+        item = self.get_rate_index(json, ccy.upper())
+        
+        d = {}
+        if(item != None):
+            d[ccy.upper()] = Decimal(item['n'])
+        return d
 
     def history_ccys(self):
         # SumcoinIndex seems to have historical data for all ccys it supports
@@ -349,6 +357,7 @@ class FxThread(ThreadJob):
 
     def exchange_rate(self) -> Decimal:
         """Returns the exchange rate as a Decimal"""
+        print(self.exchange.quotes)
         rate = self.exchange.quotes.get(self.ccy)
         if rate is None:
             return Decimal('NaN')
