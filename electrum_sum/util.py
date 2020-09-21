@@ -652,8 +652,6 @@ mainnet_block_explorers = {
                         {'tx': 'tx/', 'addr': 'address/'}),
     'SumExplorer': ('https://sumexplorer.com/',
                         {'tx': 'tx/', 'addr': 'address/'}),
-    'system default': ('blockchain://37d4696c5072cd012f3b7c651e5ce56a1383577e4edacc2d289ec9b25eebfd5e/',
-                        {'tx': 'tx/', 'addr': 'address/'}),
 }
 
 testnet_block_explorers = {
