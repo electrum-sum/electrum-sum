@@ -4,5 +4,17 @@
         "s": "50002",
         "t": "50001",
         "version": "1.4"
+    },
+    "sum2.electrum-sum.org": {
+        "pruning": "-",
+        "s": "50002",
+        "t": "50001",
+        "version": "1.4"
+    },
+    "sum3.electrum-sum.org": {
+        "pruning": "-",
+        "s": "50002",
+        "t": "50001",
+        "version": "1.4"
     }
 }
