@@ -54,7 +54,7 @@ Development version
 Check out the code from GitHub:
 
 ```
-git clone git://github.com/sumcoinlabs/electrum-sum-1.git
+git clone git://github.com/electrum-sum/electrum-sum.git
 cd electrum-sum
 ```
 
@@ -111,4 +111,4 @@ Android
 See :code:`electrum_sum/gui/kivy/Readme.md`.
 
 
-Totally lost or want to help?   email support@sumcoin.org
+
