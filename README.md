@@ -7,7 +7,7 @@ Electrum-SUM is a port of the Bitcoin wallet, to Sumcoin.
 
   Licence: MIT Licence
   Original Author: Thomas Voegtlin
-  Port Maintainer: Sumcoinlabs
+  Port Maintainer: electrum-sum
   Language: Python (>= 3.6)
   Homepage: https://electrum-sum.org/
 
