@@ -20,3 +20,4 @@ Actions=Testnet;
 [Desktop Action Testnet]
 Exec=sh -c "PATH=\"\\$HOME/.local/bin:\\$PATH\"; electrum-sum --testnet %u"
 Name=Testnet mode
+
