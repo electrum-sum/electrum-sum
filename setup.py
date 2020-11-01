@@ -92,3 +92,4 @@ setup(
     url="https://electrum-sum.org",
     long_description="""Lightweight Sumcoin Wallet""",
 )
+
